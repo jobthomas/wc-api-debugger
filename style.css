@@ -1,5 +1,5 @@
 /*
-Theme Name:   	Storefront Child Theme
+Theme Name:   	WooCommerce API Debugger
 Theme URI:    	https://github.com/riaanknoetze/wc-api-debugger
 Author:       	Riaan Knoetze
 Author URI:     http://google.com
@@ -18,3 +18,12 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
 Images License: GNU General Public License v2 or later
 */
+
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: block;
+}
