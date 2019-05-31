@@ -10,8 +10,9 @@
         // Set break variable
         var $empty_value;
 
-        // Hide any previous error messages
+        // Hide any previous error messages or API results
         $( '.woocommerce-notices-wrapper' ).remove();
+        $( '.woocommerce-api-data-general' ).removeClass( 'active' ).addClass( 'inactive' );
 
         // Run value to checks they're not empty
         $( '#search_form input[type="text"], #search_form input[type="radio"]' ).each( function() {
@@ -85,7 +86,7 @@
 
                 var $api_store_success = 
                     '<div class="woocommerce-notices-wrapper">' +
-                        '<ul class="woocommerce-info" role="alert">' +
+                        '<ul class="woocommerce-message" role="alert">' +
                             '<li>Success! We managed to connect to that site</li>' +
                         '</ul>' +
                     '</div>';
