@@ -19,6 +19,9 @@ FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
 Images License: GNU General Public License v2 or later
 */
 
+.page-template-template-wc-api-debug #primary.content-area {
+	width: 100%;
+}
 
 .inactive {
     display: none;
@@ -26,4 +29,27 @@ Images License: GNU General Public License v2 or later
 
 .active {
     display: block;
+}
+
+.page-template-template-wc-api-debug #primary.content-area abbr[title] {
+    border-bottom: none;
+    text-decoration: none;
+}
+
+abbr {
+    position: relative;
+}
+
+abbr:hover::after {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    display: block;
+    padding: 0.5em;
+    background: #333333;
+    color: #fff;
+    width: auto;
+    min-width: 270px;
+    text-align: center;
+    content: attr(title);
 }

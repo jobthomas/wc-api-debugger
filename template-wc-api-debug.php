@@ -39,9 +39,20 @@ get_header(); ?>
 		            <input type=text placeholder='API Secret' class='search_secret' value='cs_f72ae661a31734033bf69949f66dba9ef6a87312' />
 		        </p>
 
+		        <p class='woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide'>
+		            <label for='search_permalink' class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">Permalink Structure&nbsp;<span class='required'>*</span>
+		            	<br />
+		            	<input type=radio class='search_permalink woocommerce-form__input woocommerce-form__input-checkbox input-checkbox' value='pretty' name='search_permalink' />
+		            	<span><abbr title="(e.g. https://yoursite.com/sample-page)">Pretty Permalinks</abbr></span>
+		            	<br />
+		            	<input type=radio class='search_permalink woocommerce-form__input woocommerce-form__input-checkbox input-checkbox' value='plain' name='search_permalink' />
+		            	<span><abbr title="(e.g. https://yoursite.com/?p=123)">Plain Permalinks</abbr></span>
+		            </label>
+		        </p>
+
 		        <input type='submit' class='search_submit'/></form>
 		    
-		        <div id='search_container' class='content-area'>
+		        <div id='search_container'>
 
 		            <div class="woocommerce-api-data">
 
